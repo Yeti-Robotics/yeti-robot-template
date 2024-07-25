@@ -25,7 +25,5 @@ jobs:
       - name: Push changes
         env:
           HEAD_REF: ${{ github.head_ref }}
-          BASE_REF: ${{ github.base_ref }}
         run: |
-          echo $HEAD_REF
-          echo $BASE_REF
+          git push origin $HEAD_REF
