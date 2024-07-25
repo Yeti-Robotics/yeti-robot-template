@@ -23,6 +23,9 @@ jobs:
           git commit -am "Fix formatting"
 
       - name: Push changes
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+          BASE_REF: ${{ github.base_ref }}
         run: |
-          echo "${github.head_ref}"
-          echo "${github.base_ref}"
+          echo "${HEAD_REF}"
+          echo "${BASE_REF}"
