@@ -15,3 +15,9 @@ jobs:
 
       - name: Execute Gradle build
         run: ./gradlew spotlessApply
+
+      - name: Commit fixed formatting
+        run: git commit -am "Fix formatting"
+
+      - name: Push formatting
+        run: git push
