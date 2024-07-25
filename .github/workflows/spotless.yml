@@ -28,5 +28,4 @@ jobs:
         env:
           HEAD_REF: ${{ github.head_ref }}
         run: |
-          git branch -r
           git push origin "refs/heads/$HEAD_REF"
