@@ -14,5 +14,5 @@ package frc.robot.constants;
  * constants are needed, to reduce verbosity.
  */
 public final class Constants {
-    public static final int XBOX_CONTROLLER_PORT = 0;
+    public static final int PRIMARY_CONTROLLER_PORT = 0;
 }

@@ -5,7 +5,6 @@
 
 package frc.robot;
 
-import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import edu.wpi.first.wpilibj2.command.button.Trigger;
@@ -19,11 +18,11 @@ import frc.robot.constants.Constants;
  */
 public class RobotContainer {
 
-    XboxController xboxController;
+    CommandXboxController primary;
 
     /** The container for the robot. Contains subsystems, OI devices, and commands. */
     public RobotContainer() {
-        xboxController = new XboxController(Constants.XBOX_CONTROLLER_PORT);
+        primary = new CommandXboxController(Constants.PRIMARY_CONTROLLER_PORT);
         configureBindings();
     }
 
